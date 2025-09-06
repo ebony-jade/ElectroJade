@@ -171,22 +171,22 @@ main {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 4 per row on large screens */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap: 20px;
   justify-items: center;
-  max-width: 1200px;   /* keeps things tidy */
-  margin: 0 auto;      /* centers the grid */
-  padding: 1rem;       /* breathing room */
+  max-width: 1200px;  
+  margin: 0 auto;      
+  padding: 1rem;       
 }
 
-/* Tablet (≤1024px): show 2 per row */
+/* Tablet: */
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile (≤600px): show 1 per row */
+/* Mobile: */
 @media (max-width: 600px) {
   .gallery-grid {
     grid-template-columns: 1fr;
@@ -253,7 +253,7 @@ main {
 
 #resume iframe {
   width: 100%;
-  max-width: 800px; /* keeps it from stretching too wide */
+  max-width: 800px; 
   height: 1100px;
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -337,7 +337,7 @@ body::before {
     content: "";
     position: fixed;
     top:0; left:0; right:0; bottom:0;
-    background: rgba(255,255,255,0.85); /* light overlay */
+    background: rgba(255,255,255,0.85);
     z-index: -1;
 }
 
@@ -489,7 +489,7 @@ body::before {
 
 .project-video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -507,7 +507,7 @@ body::before {
 
 .project-video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
